@@ -1,0 +1,23 @@
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Admin Panel</a>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#home" routerLink="/">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#tasklist" routerLink="/tasklist">Tasklist </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  (click) = "logout()" >logout</a>
+          </li>
+          <span class = "spanName">{{username}}</span>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="container">
+    <router-outlet></router-outlet>
+</div>
